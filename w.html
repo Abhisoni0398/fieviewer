@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<h2 style="text-align:center">File Viewer</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="img1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="img2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="img3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+
+ <div class="column">
+    <img  src="img4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="pdf.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="docx.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="txt.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 7</div>
+      <img src="img1_wide.jpg" style="width:100%">
+      <button class="btn"><i class="fa fa-download"></i></button>
+      <button class="btn"><i class="fas fa-trash alt"></i></button>
+    </div>
+    
+    
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 7</div>
+      <img src="img2_wide.jpg" style="width:100%">
+      <button class="btn"><i class="fa fa-download"></i></button>
+      <button class="btn"><i class="fas fa-trash alt"></i></button>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 7</div>
+      <img src="img3_wide.jpg" style="width:100%">
+      <button class="btn"><i class="fa fa-download"></i></button>
+      <button class="btn"><i class="fas fa-trash alt"></i></button>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 7</div>
+      <img src="img4_wide.jpg" style="width:100%">
+      <button class="btn"><i class="fa fa-download"></i></button>
+      <button class="btn"><i class="fas fa-trash alt"></i></button>
+      <a href="img4.jpg" download>
+        <img src="img4.jpg" alt="W3Schools" width="104" height="142">
+      </a>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 7</div>
+      <img src="" style="width:100%"><iframe src="profile.pdf" frameborder="0" height="500px" style="width:100%"></iframe>
+      <button class="btn"><i class="fa fa-download"></i></button>
+      <button class="btn"><i class="fas fa-trash alt"></i></button>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+      <img src="" style="width:100%"><div class="docfile" style="width:100%" ><p>This file cannot b opened.<a href="Download">Click here to download this file.</a></p></div>
+      <button class="btn"><i class="fa fa-download"></i><a href="profile.pdf" download>Download the pdf</a></button>
+      <button class="btn"><i class="fas fa-trash alt"></i></button>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+      <img src="" style="width:100%"><iframe src="file.txt" frameborder="0" style="width:100%"></iframe>
+       <button class="btn"><i class="fa fa-download"></i></button>
+      <button class="btn"><i class="fas fa-trash alt"></i></button>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="flex">
+      <div class="column">
+        <img class="demo cursor" src="img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="pdf.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="docx.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="txt.jpg" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<script src="w.js"></script>
+<script src="download.js"></script>
+<script src="FileSaver.min.js"></script>
+    
+</body>
+</html>
